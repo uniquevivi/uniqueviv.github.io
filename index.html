@@ -393,7 +393,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-02-12 00:22:58" itemprop="dateModified" datetime="2019-02-12T00:22:58+08:00">2019-02-12</time>
+                <time title="Updated at: 2019-02-12 00:24:56" itemprop="dateModified" datetime="2019-02-12T00:24:56+08:00">2019-02-12</time>
               
             
           </span>
@@ -453,7 +453,34 @@
 
       
         
-          <p>在Hexo中有两份主要的配置文件，其名称都是_config.yml。其中，一份位于站点根目录下，主要包含Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>为了描述方便，在一下说明中，将前者称为站点配置文件，后者称为主题配置文件。<br>以下所有终端执行的命令都在Hexo根目录下执行。<br>
+          <p>在Hexo中有两份主要的配置文件，其名称都是_config.yml。其中，一份位于站点根目录下，主要包含Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>为了描述方便，在一下说明中，将前者称为站点配置文件，后者称为主题配置文件。<br>以下所有终端执行的命令都在Hexo根目录下执行。<br>&lt;! –more–&gt;</p>
+<ol>
+<li>Next主题样式设置<br>打开主题配置文件找到 Scheme Settings</li>
+</ol>
+<p><img src="http://pmr5sucmq.bkt.clouddn.com/Next%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F%E8%AE%BE%E7%BD%AE.png" alt="avatar"></p>
+<p>4种风格大同小异。</p>
+<ol start="2">
+<li><p>侧栏设置</p>
+<blockquote>
+<p>侧栏设置包括：侧栏位置、侧栏显示与否、文章间距、返回顶部按钮等等<br>打开主题配置文件到sidebar字段。</p>
+</blockquote>
+</li>
+<li><p>添加分类模块<br>1、新建一个分类页面。</p>
+<blockquote>
+<p>$ hexo new page categories</p>
+</blockquote>
+</li>
+</ol>
+<p>2、你会发现你的source文件夹下有了 categories/index.md，打开index.md文件将title设置为title: 分类。<br>3、打开主题配置文件找到menu，将categories取消注释。<br>4、把文章归入分类只需在文章的顶部标题下方添加categories字段，即可自动创建分类名并加入对应的分类中。<br><img src="http://pmr5sucmq.bkt.clouddn.com/%E5%8D%95%E7%BA%A7%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95.png" alt="avatar"><br>5、添加多级目录<br><img src="http://pmr5sucmq.bkt.clouddn.com/%E5%A4%9A%E7%BA%A7%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95.png" alt="avatar"></p>
+<ol start="4">
+<li>添加搜索功能<br>1、安装hexo-generator-searchdb插件<blockquote>
+<p>$ npm install hexo-generator-searchdb –save</p>
+</blockquote>
+</li>
+</ol>
+<p>2、打开站点配置文件找到Extensions在下面添加<br><img src="http://pmr5sucmq.bkt.clouddn.com/%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png" alt="avatar"><br>3、打开主题配置文件找到Local search，将enable设置为true<br><img src="http://pmr5sucmq.bkt.clouddn.com/%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png" alt="avatar"></p>
+<ol start="5">
+<li>添加阅读全文按钮<br>因为在你的博客主页会有多篇文章，如果你想让你的文章只显示一部分，多余的可以点击阅读全文来查看，那么你需要在你的文章中添加<blockquote>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -465,7 +492,7 @@
           <!--/noindex-->
         
       
-    </p></div>
+    </blockquote></li></ol></div>
 
     
 
