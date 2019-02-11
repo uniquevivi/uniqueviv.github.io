@@ -48,7 +48,7 @@
   <entry>
     <title><![CDATA[手动安装插件]]></title>
     <url>%2FAtom%2F%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%2FAtom%2F%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%2F%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[atom通过setting中无法下载插件，通过apm也无法下载插件，可能是网络问题，不好解决。 下面的介绍手动下载插件的方法： 在Atom的File-&gt;Settings页面进入到Atom的配置项目，选择Install选项卡，这是我们放置插件包的地方。 打开 https://atom.io/packages 浏览自己需要的插件。 点击插件中的repo，进入github工程，复制github地址。 在Atom安装目录下的packages文件夹中运行git bash命令，输入： git clone https://github.com/tlnagy/atom-markdown-image-assistant.git (将插件的源代码克隆到文件夹中) 进入插件包文件夹。 npm install (下载，生成插件) 重启Atom或者Control+Alt+R刷新Atom。]]></content>
+    <content type="text"><![CDATA[atom通过setting中无法下载插件，通过apm也无法下载插件，可能是网络问题，不好解决。下面的介绍手动下载插件的方法： 在Atom的File-&gt;Settings页面进入到Atom的配置项目，选择Install选项卡，这是我们放置插件包的地方。 打开 https://atom.io/packages 浏览自己需要的插件。 点击插件中的repo，进入github工程，复制github地址。 在Atom安装目录下的packages文件夹中运行git bash命令，输入： git clone https://github.com/tlnagy/atom-markdown-image-assistant.git (将插件的源代码克隆到文件夹中) 进入插件包文件夹。 npm install (下载，生成插件) 重启Atom或者Control+Alt+R刷新Atom。]]></content>
       <categories>
         <category>Atom</category>
         <category>手动安装插件</category>
