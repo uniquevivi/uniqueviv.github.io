@@ -109,7 +109,9 @@
 <meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png">
 <meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png">
 <meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/%E9%98%85%E8%AF%BB%E5%85%A8%E6%96%87.png">
-<meta property="og:updated_time" content="2019-02-11T16:45:08.748Z">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/LeancloudKey.png">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/Valine%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE.png">
+<meta property="og:updated_time" content="2019-02-12T07:04:55.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Next主题配置">
 <meta name="twitter:description" content="在Hexo中有两份主要的配置文件，其名称都是_config.yml。其中，一份位于站点根目录下，主要包含Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。为了描述方便，在一下说明中，将前者称为站点配置文件，后者称为主题配置文件。以下所有终端执行的命令都在Hexo根目录下执行。">
@@ -226,7 +228,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Accueil</a>
 
   </li>
         
@@ -243,7 +245,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Kategorien</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
 
   </li>
         
@@ -260,7 +262,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
 
   </li>
 
@@ -271,7 +273,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Suche</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>recherche</a>
         </li>
       
     </ul>
@@ -377,7 +379,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
 
               
@@ -401,7 +403,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-02-12 00:45:08" itemprop="dateModified" datetime="2019-02-12T00:45:08+08:00">2019-02-12</time>
+                <time title="Updated at: 2019-02-12 15:04:55" itemprop="dateModified" datetime="2019-02-12T15:04:55+08:00">2019-02-12</time>
               
             
           </span>
@@ -415,14 +417,14 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
 
                 
                 
-                  . 
+                  , 
                 
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Hexo/Next主题配置/" itemprop="url" rel="index"><span itemprop="name">Next主题配置</span></a></span>
@@ -503,6 +505,12 @@
 <li>添加阅读全文按钮<br>因为在你的博客主页会有多篇文章，如果你想让你的文章只显示一部分，多余的可以点击阅读全文来查看，那么你需要在你的文章中添加<br><img src="http://pmr5sucmq.bkt.clouddn.com/%E9%98%85%E8%AF%BB%E5%85%A8%E6%96%87.png" alt="avatar"></li>
 </ol>
 <p>其后面的部分就不会显示了，只能点击阅读全文才能看。</p>
+<ol start="6">
+<li><p>添加评论系统(Valine)<br>1、注册Leancloud<br>我们的评论系统其实是放在Leancloud上的，因此首先需要去注册一个账号。<br>注册完以后需要创建一个应用，然后 进入应用-&gt;设置-&gt;应用Key<br><img src="http://pmr5sucmq.bkt.clouddn.com/LeancloudKey.png" alt="avatar"><br>打开主题配置文件搜索valine，填入appid和appkey<br><img src="http://pmr5sucmq.bkt.clouddn.com/Valine%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE.png" alt="avatar"></p>
+</li>
+<li><p>添加站点访问计数(不蒜子)<br>1、安装脚本<br>打开themes/hexo-theme-next/layout/_ partials/footer.swig，将下面这段代码添加到里面</p>
+</li>
+</ol>
 
       
     </div>
@@ -607,7 +615,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">9</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">articles</span>
                   </a>
                 </div>
               
@@ -646,7 +654,7 @@
                       
                     
                     <span class="site-state-item-count">13</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
               
@@ -698,7 +706,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -706,8 +714,19 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.0.0</div>
+  <div class="theme-info">Thème – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.0.0</div>
 
+
+<div>
+	<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	<span id="busuanzi_container_site_pv" style="display:none">
+		本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    <span class="post-meta-divider">|</span>
+	</span>
+	<span id="busuanzi_container_site_uv" style="display:none">
+		有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+	</span>
+</div>
 
 
 
