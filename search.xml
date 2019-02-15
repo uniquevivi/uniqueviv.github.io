@@ -11,7 +11,7 @@
   <entry>
     <title><![CDATA[图片]]></title>
     <url>%2FMarkdown%2FMarkdown%2F%E5%9B%BE%E7%89%87%2F%E5%9B%BE%E7%89%87%2F</url>
-    <content type="text"><![CDATA[插入网络图片 123![这里写图片描述](http:...)或![](http://...) 图片布局 markdown在编写文档时插入图片默认是靠左。 居中： 1&lt;div align=center&gt;![](http:...) 右侧： 1&lt;div align=right&gt;![](http:...)]]></content>
+    <content type="text"><![CDATA[插入网络图片 123![这里写图片描述](http:...)或![](http://...) 图片布局 markdown在编写文档时插入图片默认是靠左。 居中：1&lt;div align=center&gt;![](http:...) 右侧：1&lt;div align=right&gt;![](http:...)]]></content>
       <categories>
         <category>Markdown</category>
       </categories>
