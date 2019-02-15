@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="Soy">
 <meta property="og:description" content="画布上的UI元素的渲染顺序非常明确，是按照Hierarchy面板中的排列顺序渲染的。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-15T10:22:47.314Z">
+<meta property="og:updated_time" content="2019-02-15T10:26:20.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UI元素的渲染顺序">
 <meta name="twitter:description" content="画布上的UI元素的渲染顺序非常明确，是按照Hierarchy面板中的排列顺序渲染的。">
@@ -377,7 +377,7 @@
                 
               
 
-              <time title="Post created: 2019-02-15 17:54:54 / Updated at: 18:22:47" itemprop="dateCreated datePublished" datetime="2019-02-15T17:54:54+08:00">2019-02-15</time>
+              <time title="Post created: 2019-02-15 17:54:54 / Updated at: 18:26:20" itemprop="dateCreated datePublished" datetime="2019-02-15T17:54:54+08:00">2019-02-15</time>
             
 
             
@@ -456,14 +456,14 @@
       
         <p>画布上的UI元素的渲染顺序非常明确，是按照Hierarchy面板中的排列顺序渲染的。<br><a id="more"></a></p>
 <p>也就是说，在Hierarchy面板中，位于上方的元素最先被渲染(靠内侧)，位于下方的元素排在后面容器(靠外侧)。此渲染顺序在UI元素嵌套时也一样，先渲染父元素，子元素要在父元素之后渲染。</p>
-<h6 id="修改渲染顺序"><a href="#修改渲染顺序" class="headerlink" title="修改渲染顺序"></a>修改渲染顺序</h6><ol>
-<li>鼠标操作</li>
-</ol>
+<h3 id="修改渲染顺序"><a href="#修改渲染顺序" class="headerlink" title="修改渲染顺序"></a>修改渲染顺序</h3><ol>
+<li><p>鼠标操作</p>
 <p>在Hierarchy面板中拖拽UI元素重新排列即可。</p>
-<ol start="2">
-<li>脚本</li>
-</ol>
+</li>
+<li><p>脚本</p>
 <p>使用Transform类(或者其继承类的RectTransform类)方法。</p>
+</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 将obj设置为当前层级中第一个元素(渲染在最内侧)</span><br><span class="line">obj.transform.SetAsFirstSibling();</span><br><span class="line">// 将obj设置为当前层级中最后一个元素(渲染在最外侧)</span><br><span class="line">obj.transform.SetAsLastSibling();</span><br><span class="line">// 将obj设置为当前层级中第3个元素(由内向外第3个渲染)</span><br><span class="line">obj.transform.SetSiblingIndex(2);</span><br></pre></td></tr></table></figure>
 
       
@@ -652,7 +652,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#修改渲染顺序"><span class="nav-number">1.</span> <span class="nav-text">修改渲染顺序</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改渲染顺序"><span class="nav-number">1.</span> <span class="nav-text">修改渲染顺序</span></a></li></ol></div>
             
 
           </div>
