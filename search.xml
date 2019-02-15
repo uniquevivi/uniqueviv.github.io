@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[代码块]]></title>
+    <url>%2FMarkdown%2FMarkdown%2F%E4%BB%A3%E7%A0%81%E5%9D%97%2F%E4%BB%A3%E7%A0%81%E5%9D%97%2F</url>
+    <content type="text"><![CDATA[添加代码块 在需要添加的代码块前一行及后一行使用三个反引号：`(~键)]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[注释]]></title>
     <url>%2FMarkdown%2FMarkdown%2F%E6%B3%A8%E9%87%8A%2F%E6%B3%A8%E9%87%8A%2F</url>
     <content type="text"><![CDATA[方法一： 1[coment]:&lt;&gt; (This is a comment) 方法二： 1[//]:&lt;&gt; (This is a comment) 方法三： 1[//]:# (This is a comment) 方法四： 1[^_^]: This is a comment]]></content>
