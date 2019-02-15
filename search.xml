@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[注释]]></title>
+    <url>%2FMarkdown%2FMarkdown%2F%E6%B3%A8%E9%87%8A%2F%E6%B3%A8%E9%87%8A%2F</url>
+    <content type="text"><![CDATA[方法一： 1[coment]:&lt;&gt; (This is a comment) 方法二： 1[//]:&lt;&gt; (This is a comment) 方法三： 1[//]:# (This is a comment) 方法四： 1[^_^]: This is a comment]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[图片]]></title>
+    <url>%2FMarkdown%2FMarkdown%2F%E5%9B%BE%E7%89%87%2F%E5%9B%BE%E7%89%87%2F</url>
+    <content type="text"><![CDATA[插入网络图片 图片布局 markdown在编写文档时插入图片默认是靠左。 居中： 右侧：]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[什么是画布]]></title>
+    <url>%2FUnity%2FUGUI%2FUnity%2FUGUI%2FUI%E7%9A%84%E6%9E%84%E6%88%90%2F%E4%BB%80%E4%B9%88%E6%98%AF%E7%94%BB%E5%B8%83%2F%E4%BB%80%E4%B9%88%E6%98%AF%E7%94%BB%E5%B8%83%2F</url>
+    <content type="text"><![CDATA[画布(Canvas)是附加了Canvas组件的游戏对象。 画布是所有UI元素的父元素，正如其名，就像用来画画的画布一样，它控制着对UI元素界面的渲染。 如果场景内没有画布的话，任意创建一个UI元素，就会自动生成画布。还可以通过从GameObject菜单中选择”UI”-&gt;”Canvas”，创建空白画布。 通常渲染所有的UI元素，只需要有一个画布即可。若是UI覆盖在其他UI上显示时，则可以配置多个画布。此外，还能在一个画布的子元素中嵌套画布。]]></content>
+      <categories>
+        <category>Unity</category>
+        <category>UGUI</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[UI元素的创建]]></title>
+    <url>%2FUnity%2FUGUI%2FUnity%2FUGUI%2FUI%E7%9A%84%E6%9E%84%E6%88%90%2FUI%E5%85%83%E7%B4%A0%E7%9A%84%E5%88%9B%E5%BB%BA%2FUI%E5%85%83%E7%B4%A0%E7%9A%84%E5%88%9B%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[创建UI元素，需要从GameObject(游戏对象)菜单中的”UI”内选择。通过Hierarchy(层级)面板中的Create菜单，或者右击打开的内容菜单，都能创建UI元素。 例如，在空白场景中，通过GameObject菜单，选择”UI”-&gt;”Button”，就创建了对象”Button”。此时，自动生成对象”Button”的父元素对象”Canvas”。而且，还同时创建了对象”EventSystem”。 图1 GameObject菜单 图2 创建的”Button”对象]]></content>
+      <categories>
+        <category>Unity</category>
+        <category>UGUI</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[简介]]></title>
+    <url>%2FUnity%2FUGUI%2FUnity%2FUGUI%2FUI%E7%9A%84%E6%9E%84%E6%88%90%2F%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[在Unity的新UI系统中，UI元素也是由游戏对象来构成，所以与其他游戏对象一样，是在场景内构建UI的。此外，场景内的UI是由负责渲染UI元素的画布(Canvas)，以及对于UI元素进行事件处理的事件系统(Event System)来控制的。而且，所有的UI元素都是由Rect Transform组件控制位置和大小的。]]></content>
+      <categories>
+        <category>Unity</category>
+        <category>UGUI</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[空格]]></title>
+    <url>%2FMarkdown%2FMarkdown%2F%E7%A9%BA%E6%A0%BC%2F%E7%A9%BA%E6%A0%BC%2F</url>
+    <content type="text"><![CDATA[手动输入空格(&amp;nbsp；)。注意！此时的分毫为英文分号，但是不推荐使用此方法，太麻烦！ 使用全角空格。即：在全角输入状态下直接输入空格。]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[Unity Editor窗口]]></title>
+    <url>%2FUnity%2F%E7%95%8C%E9%9D%A2%2FUnity%2F%E7%95%8C%E9%9D%A2%2FUnity%20Editor%E7%AA%97%E5%8F%A3%2FUnity%20Editor%E7%AA%97%E5%8F%A3%2F</url>
+    <content type="text"><![CDATA[Unity Editor窗口，默认以长方形的Scene视图为中心布局，通过位于右上方的”Layout”下拉菜单可以切换为事先预备的预设布局。可以根据不同的目的灵活使用不同的布局，比如将主要视图均衡布局的”2 by 3”，将场景分割为上面、前面、右侧面、透视图4格显示的”4 Split”等。]]></content>
+      <categories>
+        <category>Unity</category>
+        <category>界面</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Next主题配置]]></title>
     <url>%2FHexo%2FNext%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%2FHexo%2FNext%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%2FNext%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[在Hexo中有两份主要的配置文件，其名称都是_config.yml。其中，一份位于站点根目录下，主要包含Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。为了描述方便，在一下说明中，将前者称为站点配置文件，后者称为主题配置文件。以下所有终端执行的命令都在Hexo根目录下执行。 Next主题样式设置打开主题配置文件找到 Scheme Settings 4种风格大同小异。 侧栏设置 侧栏设置包括：侧栏位置、侧栏显示与否、文章间距、返回顶部按钮等等打开主题配置文件到sidebar字段。 添加分类模块1、新建一个分类页面。 $ hexo new page categories 2、你会发现你的source文件夹下有了 categories/index.md，打开index.md文件将title设置为title: 分类。3、打开主题配置文件找到menu，将categories取消注释。4、把文章归入分类只需在文章的顶部标题下方添加categories字段，即可自动创建分类名并加入对应的分类中。5、添加多级目录 添加搜索功能1、安装hexo-generator-searchdb插件 $ npm install hexo-generator-searchdb –save 2、打开站点配置文件找到Extensions在下面添加3、打开主题配置文件找到Local search，将enable设置为true 添加阅读全文按钮因为在你的博客主页会有多篇文章，如果你想让你的文章只显示一部分，多余的可以点击阅读全文来查看，那么你需要在你的文章中添加 其后面的部分就不会显示了，只能点击阅读全文才能看。 添加评论系统(Valine)1、注册Leancloud我们的评论系统其实是放在Leancloud上的，因此首先需要去注册一个账号。注册完以后需要创建一个应用，然后 进入应用-&gt;设置-&gt;应用Key打开主题配置文件搜索valine，填入appid和appkey 添加站点访问计数(不蒜子)1、安装脚本打开themes/hexo-theme-next/layout/_ partials/footer.swig，将下面这段代码添加到里面]]></content>
@@ -29,20 +89,18 @@
   </entry>
   <entry>
     <title><![CDATA[有序列表]]></title>
-    <url>%2FMarkdown%2F%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%2FMarkdown%2F%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%2F%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%2F</url>
+    <url>%2FMarkdown%2FMarkdown%2F%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%2F%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%2F</url>
     <content type="text"><![CDATA[添加有序列表的方法是，在文字前添加数字加英文句点，需要注意的是文字与符号之间要空一格。 第一个 第二个]]></content>
       <categories>
         <category>Markdown</category>
-        <category>有序列表</category>
       </categories>
   </entry>
   <entry>
     <title><![CDATA[引用]]></title>
-    <url>%2FMarkdown%2F%E5%BC%95%E7%94%A8%2FMarkdown%2F%E5%BC%95%E7%94%A8%2F%E5%BC%95%E7%94%A8%2F</url>
+    <url>%2FMarkdown%2FMarkdown%2F%E5%BC%95%E7%94%A8%2F%E5%BC%95%E7%94%A8%2F</url>
     <content type="text"><![CDATA[在需要引用的话前面加上符号&gt;，效果如下。 引用的话]]></content>
       <categories>
         <category>Markdown</category>
-        <category>引用</category>
       </categories>
   </entry>
   <entry>
@@ -56,11 +114,10 @@
   </entry>
   <entry>
     <title><![CDATA[水平区分线]]></title>
-    <url>%2FMarkdown%2F%E6%B0%B4%E5%B9%B3%E5%8C%BA%E5%88%86%E7%BA%BF%2FMarkdown%2F%E6%B0%B4%E5%B9%B3%E5%8C%BA%E5%88%86%E7%BA%BF%2F%E6%B0%B4%E5%B9%B3%E5%88%86%E5%8C%BA%E7%BA%BF%2F</url>
+    <url>%2FMarkdown%2FMarkdown%2F%E6%B0%B4%E5%B9%B3%E5%8C%BA%E5%88%86%E7%BA%BF%2F%E6%B0%B4%E5%B9%B3%E5%88%86%E5%8C%BA%E7%BA%BF%2F</url>
     <content type="text"><![CDATA[在需要添加横线的行，添加三个或三个以上短横线-、星号*、或者下划线_即可。]]></content>
       <categories>
         <category>Markdown</category>
-        <category>水平区分线</category>
       </categories>
   </entry>
   <entry>
@@ -76,7 +133,7 @@
   <entry>
     <title><![CDATA[Unity相关名词解析]]></title>
     <url>%2FUnity%2FUnity%2F%E5%90%8D%E8%AF%8D%E8%A7%A3%E6%9E%90%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[游戏引擎(Game Engine):为游戏开发提供各种所必需功能的架构，包括3D或2D图形渲染、物理模拟、碰撞检测、声音或动画等。 集成开发环境(IDE/Integrated Development Environment)。 资源商店(Asset Store)。 VR(Virtual Reality，虚拟现实)。 场景(Scene):即为放置对象的3D空间，类似与舞台。放置与舞台上的对象称为游戏对象(Game Object)，并不只是演员(角色等模型)，背景、舞台装置以及相机、灯光、UI等所有这些都是作为游戏对象来放置于场景中的。]]></content>
       <categories>
         <category>Unity</category>
       </categories>
