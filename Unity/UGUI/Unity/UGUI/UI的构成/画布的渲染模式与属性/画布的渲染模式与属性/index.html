@@ -96,24 +96,31 @@
 
 
 
-  <meta name="description" content="方法一： 1[coment]:&amp;lt;&amp;gt; (This is a comment)">
+  <meta name="description" content="画布中有”Screen Space-Overlay”、”Screen Space-Camera”、”World Space”三种渲染模式(Render Mode)。渲染模式不同，画布的渲染方式也会改变。嵌套画布时，子画布的渲染模式与父画布的渲染模式相同。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="注释">
-<meta property="og:url" content="http://yoursite.com/Markdown/Markdown/注释/注释/index.html">
+<meta property="og:title" content="画布的渲染模式与属性">
+<meta property="og:url" content="http://yoursite.com/Unity/UGUI/Unity/UGUI/UI的构成/画布的渲染模式与属性/画布的渲染模式与属性/index.html">
 <meta property="og:site_name" content="Soy">
-<meta property="og:description" content="方法一： 1[coment]:&amp;lt;&amp;gt; (This is a comment)">
+<meta property="og:description" content="画布中有”Screen Space-Overlay”、”Screen Space-Camera”、”World Space”三种渲染模式(Render Mode)。渲染模式不同，画布的渲染方式也会改变。嵌套画布时，子画布的渲染模式与父画布的渲染模式相同。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-15T09:10:06.665Z">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/Screen%20Space-Overlay%E5%B1%9E%E6%80%A7.png">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/%E5%AD%90Canvas%E5%B1%9E%E6%80%A7.png">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/Screen%20Space-Camera%E5%B1%9E%E6%80%A7.png">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/Add%20Sorting%20Layer%E6%AD%A5%E9%AA%A4%EF%BC%91.png">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/Add%20Sorting%20Layer%E6%AD%A5%E9%AA%A4%EF%BC%92.png">
+<meta property="og:image" content="http://pmr5sucmq.bkt.clouddn.com/%EF%BC%B7orld%20Space%E5%B1%9E%E6%80%A7.png">
+<meta property="og:updated_time" content="2019-02-18T03:40:34.511Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="注释">
-<meta name="twitter:description" content="方法一： 1[coment]:&amp;lt;&amp;gt; (This is a comment)">
+<meta name="twitter:title" content="画布的渲染模式与属性">
+<meta name="twitter:description" content="画布中有”Screen Space-Overlay”、”Screen Space-Camera”、”World Space”三种渲染模式(Render Mode)。渲染模式不同，画布的渲染方式也会改变。嵌套画布时，子画布的渲染模式与父画布的渲染模式相同。">
+<meta name="twitter:image" content="http://pmr5sucmq.bkt.clouddn.com/Screen%20Space-Overlay%E5%B1%9E%E6%80%A7.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/Markdown/Markdown/注释/注释/">
+  <link rel="canonical" href="http://yoursite.com/Unity/UGUI/Unity/UGUI/UI的构成/画布的渲染模式与属性/画布的渲染模式与属性/">
 
 
 
@@ -123,7 +130,7 @@
   };
 </script>
 
-  <title>注释 | Soy</title>
+  <title>画布的渲染模式与属性 | Soy</title>
   
 
 
@@ -334,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Markdown/Markdown/注释/注释/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Unity/UGUI/Unity/UGUI/UI的构成/画布的渲染模式与属性/画布的渲染模式与属性/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Soy">
@@ -351,7 +358,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">注释
+          <h1 class="post-title" itemprop="name headline">画布的渲染模式与属性
 
               
             
@@ -377,12 +384,24 @@
                 
               
 
-              <time title="Created: 2019-02-15 16:53:15 / Modified: 17:10:06" itemprop="dateCreated datePublished" datetime="2019-02-15T16:53:15+08:00">2019-02-15</time>
+              <time title="Created: 2019-02-15 18:33:46" itemprop="dateCreated datePublished" datetime="2019-02-15T18:33:46+08:00">2019-02-15</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-02-18 11:40:34" itemprop="dateModified" datetime="2019-02-18T11:40:34+08:00">2019-02-18</time>
               
             
           </span>
@@ -399,7 +418,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Unity/" itemprop="url" rel="index"><span itemprop="name">Unity</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Unity/UGUI/" itemprop="url" rel="index"><span itemprop="name">UGUI</span></a></span>
 
                 
                 
@@ -418,8 +444,8 @@
                 </span>
             
                 <span class="post-meta-item-text">Comments: </span>
-                <a href="/Markdown/Markdown/注释/注释/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/Markdown/Markdown/注释/注释/" itemprop="commentCount"></span>
+                <a href="/Unity/UGUI/Unity/UGUI/UI的构成/画布的渲染模式与属性/画布的渲染模式与属性/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Unity/UGUI/Unity/UGUI/UI的构成/画布的渲染模式与属性/画布的渲染模式与属性/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -447,15 +473,61 @@
       
 
       
-        <p>方法一：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[coment]:&lt;&gt; (This is a comment)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>方法二：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[//]:&lt;&gt; (This is a comment)</span><br></pre></td></tr></table></figure>
-<p>方法三：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[//]:# (This is a comment)</span><br></pre></td></tr></table></figure>
-<p>方法四：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[^_^]: This is a comment</span><br></pre></td></tr></table></figure>
+        <p>画布中有”Screen Space-Overlay”、”Screen Space-Camera”、”World Space”三种渲染模式(Render Mode)。渲染模式不同，画布的渲染方式也会改变。<br>嵌套画布时，子画布的渲染模式与父画布的渲染模式相同。<br><a id="more"></a></p>
+<h3 id="“Screen-Space-Overlay”模式"><a href="#“Screen-Space-Overlay”模式" class="headerlink" title="“Screen Space-Overlay”模式"></a>“Screen Space-Overlay”模式</h3><p>在”Screen Space-Overlay”模式中，无论画布位于场景内的何处，都会渲染覆盖整个画面。</p>
+<p>随着画面(游戏视图)的大小、分辨率的改变，画布的大小也会随之自动调整。</p>
+<p>在”Screen Space-Overlay”模式中，可以设置如下属性。</p>
+<p><div align="center"><img src="http://pmr5sucmq.bkt.clouddn.com/Screen%20Space-Overlay%E5%B1%9E%E6%80%A7.png" alt=""></div></p>
+<ul>
+<li>Pixel Perfect</li>
+</ul>
+<p>如果勾选了Pixel Perfect(完美像素)属性的话，就将画布内的UI元素的像素渲染统一。开启这个属性，即使放置在像素不一致的位置，也不会模糊，可以显示的很清晰。即，使UI元素像素对应，效果就是边缘清晰不模糊。</p>
+<p>很多UI元素都可以通过缩放、旋转、动画等来调整位置和大小，在追求更高性能时，可以考虑将Pixed Perfect属性设置为OFF。</p>
+<ul>
+<li>Sort Order</li>
+</ul>
+<p>通过数值设置画布上的徐渲染顺序。值越小越先(越靠内侧)渲染，值越大越后(越靠外侧)渲染。</p>
+<p>多个Canvas同时存在时，子Canvas默认同父Canvas的Sort Order值一致。但可以通过勾选Override Sorting修改子Canvas自己的Sort Order值。</p>
+<p><div align="center"><img src="http://pmr5sucmq.bkt.clouddn.com/%E5%AD%90Canvas%E5%B1%9E%E6%80%A7.png" alt=""></div></p>
+<h3 id="“Screen-Space-Camera”模式"><a href="#“Screen-Space-Camera”模式" class="headerlink" title="“Screen Space-Camera”模式"></a>“Screen Space-Camera”模式</h3><p>在”Screen Space-Camera”模式下，画布被放置在指定摄像机前的一个给定距离处，通过该摄像机进行渲染。</p>
+<p>也就是说，摄像机的设置会影响到UI元素的呈现效果。如果摄像机的Projection属性被设置为”Perspective”的话，UI元素会被渲染为略带透明效果(透明度根据摄像机的Field of View属性的值而变化)。</p>
+<p>随着画面(游戏视图)的大小、分辨率的改变，或者摄像机的视口发生变化的话，画布也会相应地自动调整大小、位置和朝向，以正面面对摄像机。</p>
+<p><div align="center"><img src="http://pmr5sucmq.bkt.clouddn.com/Screen%20Space-Camera%E5%B1%9E%E6%80%A7.png" alt=""></div></p>
+<ul>
+<li>Pixel Perfect</li>
+</ul>
+<p>与”Screen Space-Overlay”模式的Pixel Perfect属性相同，勾选该属性的话，会将画布内UI元素的像素渲染一致。</p>
+<ul>
+<li>Render Camera</li>
+</ul>
+<p>指定渲染画布的摄像机。</p>
+<ul>
+<li>Plane Distance</li>
+</ul>
+<p>设置从画布到摄像机的距离。</p>
+<ul>
+<li>Sorting Layer</li>
+</ul>
+<p>指定画布的渲染层级。Sorting Layer是控制包括2D脚本在内的2D图形渲染顺序的结构。使用Sorting Layer，可以控制渲染顺序而与图形元素距摄像机的距离(Z坐标)无关。</p>
+<p>添加Sorting Layer或者变更渲染顺序时，从Sorting Layer属性的下拉菜单中选择”Add Sorting Layer”即可。</p>
+<table><br>    <tr><br>        <td><center><img src="http://pmr5sucmq.bkt.clouddn.com/Add%20Sorting%20Layer%E6%AD%A5%E9%AA%A4%EF%BC%91.png"></center></td><br>        <td><center><img src="http://pmr5sucmq.bkt.clouddn.com/Add%20Sorting%20Layer%E6%AD%A5%E9%AA%A4%EF%BC%92.png"></center></td><br>    </tr><br></table>
+
+<ul>
+<li>Order in Layer</li>
+</ul>
+<p>设置画布Sorting Layer内的渲染顺序。值越小越先(靠内侧)渲染，值越大越后(靠外侧)渲染。</p>
+<h3 id="“World-Space”模式"><a href="#“World-Space”模式" class="headerlink" title="“World Space”模式"></a>“World Space”模式</h3><p>“World Space”模式画布，可与场景内的其他游戏对象一样处理。画布的尺寸不是由画面(游戏视图)的尺寸决定，而是通过Rect Transform组件来定义的。</p>
+<p>画布内的UI元素和场景内的其他游戏对象，按照3D空间上的位置关系渲染。</p>
+<p>此模式适用于将UI元素作为场景的一部分来处理的情况。</p>
+<p><div align="center"><img src="http://pmr5sucmq.bkt.clouddn.com/%EF%BC%B7orld%20Space%E5%B1%9E%E6%80%A7.png" alt=""></div></p>
+<ul>
+<li>Event Camera</li>
+</ul>
+<p>指定处理事件的摄像机。</p>
+<ul>
+<li>Sorting Layer、Order in Layer</li>
+</ul>
+<p>与”Screen Space-Camera”模式的Sorting Layer属性与Order in Layer属性相同，都是设置画布渲染层级与Sorting Layer内的渲染顺序的。</p>
 
       
     </div>
@@ -486,8 +558,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Markdown/Markdown/图片/图片/" rel="next" title="图片">
-                <i class="fa fa-chevron-left"></i> 图片
+              <a href="/Unity/UGUI/Unity/UGUI/UI的构成/UI元素的渲染顺序/UI元素的渲染顺序/" rel="next" title="UI元素的渲染顺序">
+                <i class="fa fa-chevron-left"></i> UI元素的渲染顺序
               </a>
             
           </div>
@@ -495,10 +567,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Markdown/Markdown/代码块/代码块/" rel="prev" title="代码块">
-                代码块 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -547,8 +615,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -627,6 +704,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#“Screen-Space-Overlay”模式"><span class="nav-number">1.</span> <span class="nav-text">“Screen Space-Overlay”模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#“Screen-Space-Camera”模式"><span class="nav-number">2.</span> <span class="nav-text">“Screen Space-Camera”模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#“World-Space”模式"><span class="nav-number">3.</span> <span class="nav-text">“World Space”模式</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

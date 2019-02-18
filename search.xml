@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[画布的渲染模式与属性]]></title>
+    <url>%2FUnity%2FUGUI%2FUnity%2FUGUI%2FUI%E7%9A%84%E6%9E%84%E6%88%90%2F%E7%94%BB%E5%B8%83%E7%9A%84%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%B1%9E%E6%80%A7%2F%E7%94%BB%E5%B8%83%E7%9A%84%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%B1%9E%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[画布中有”Screen Space-Overlay”、”Screen Space-Camera”、”World Space”三种渲染模式(Render Mode)。渲染模式不同，画布的渲染方式也会改变。嵌套画布时，子画布的渲染模式与父画布的渲染模式相同。 “Screen Space-Overlay”模式在”Screen Space-Overlay”模式中，无论画布位于场景内的何处，都会渲染覆盖整个画面。 随着画面(游戏视图)的大小、分辨率的改变，画布的大小也会随之自动调整。 在”Screen Space-Overlay”模式中，可以设置如下属性。 Pixel Perfect 如果勾选了Pixel Perfect(完美像素)属性的话，就将画布内的UI元素的像素渲染统一。开启这个属性，即使放置在像素不一致的位置，也不会模糊，可以显示的很清晰。即，使UI元素像素对应，效果就是边缘清晰不模糊。 很多UI元素都可以通过缩放、旋转、动画等来调整位置和大小，在追求更高性能时，可以考虑将Pixed Perfect属性设置为OFF。 Sort Order 通过数值设置画布上的徐渲染顺序。值越小越先(越靠内侧)渲染，值越大越后(越靠外侧)渲染。 多个Canvas同时存在时，子Canvas默认同父Canvas的Sort Order值一致。但可以通过勾选Override Sorting修改子Canvas自己的Sort Order值。 “Screen Space-Camera”模式在”Screen Space-Camera”模式下，画布被放置在指定摄像机前的一个给定距离处，通过该摄像机进行渲染。 也就是说，摄像机的设置会影响到UI元素的呈现效果。如果摄像机的Projection属性被设置为”Perspective”的话，UI元素会被渲染为略带透明效果(透明度根据摄像机的Field of View属性的值而变化)。 随着画面(游戏视图)的大小、分辨率的改变，或者摄像机的视口发生变化的话，画布也会相应地自动调整大小、位置和朝向，以正面面对摄像机。 Pixel Perfect 与”Screen Space-Overlay”模式的Pixel Perfect属性相同，勾选该属性的话，会将画布内UI元素的像素渲染一致。 Render Camera 指定渲染画布的摄像机。 Plane Distance 设置从画布到摄像机的距离。 Sorting Layer 指定画布的渲染层级。Sorting Layer是控制包括2D脚本在内的2D图形渲染顺序的结构。使用Sorting Layer，可以控制渲染顺序而与图形元素距摄像机的距离(Z坐标)无关。 添加Sorting Layer或者变更渲染顺序时，从Sorting Layer属性的下拉菜单中选择”Add Sorting Layer”即可。 Order in Layer 设置画布Sorting Layer内的渲染顺序。值越小越先(靠内侧)渲染，值越大越后(靠外侧)渲染。 “World Space”模式“World Space”模式画布，可与场景内的其他游戏对象一样处理。画布的尺寸不是由画面(游戏视图)的尺寸决定，而是通过Rect Transform组件来定义的。 画布内的UI元素和场景内的其他游戏对象，按照3D空间上的位置关系渲染。 此模式适用于将UI元素作为场景的一部分来处理的情况。 Event Camera 指定处理事件的摄像机。 Sorting Layer、Order in Layer 与”Screen Space-Camera”模式的Sorting Layer属性与Order in Layer属性相同，都是设置画布渲染层级与Sorting Layer内的渲染顺序的。]]></content>
+      <categories>
+        <category>Unity</category>
+        <category>UGUI</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[UI元素的渲染顺序]]></title>
     <url>%2FUnity%2FUGUI%2FUnity%2FUGUI%2FUI%E7%9A%84%E6%9E%84%E6%88%90%2FUI%E5%85%83%E7%B4%A0%E7%9A%84%E6%B8%B2%E6%9F%93%E9%A1%BA%E5%BA%8F%2FUI%E5%85%83%E7%B4%A0%E7%9A%84%E6%B8%B2%E6%9F%93%E9%A1%BA%E5%BA%8F%2F</url>
     <content type="text"><![CDATA[画布上的UI元素的渲染顺序非常明确，是按照Hierarchy面板中的排列顺序渲染的。 也就是说，在Hierarchy面板中，位于上方的元素最先被渲染(靠内侧)，位于下方的元素排在后面容器(靠外侧)。此渲染顺序在UI元素嵌套时也一样，先渲染父元素，子元素要在父元素之后渲染。 修改渲染顺序 鼠标操作 在Hierarchy面板中拖拽UI元素重新排列即可。 脚本 使用Transform类(或者其继承类的RectTransform类)方法。 123456// 将obj设置为当前层级中第一个元素(渲染在最内侧)obj.transform.SetAsFirstSibling();// 将obj设置为当前层级中最后一个元素(渲染在最外侧)obj.transform.SetAsLastSibling();// 将obj设置为当前层级中第3个元素(由内向外第3个渲染)obj.transform.SetSiblingIndex(2);]]></content>
